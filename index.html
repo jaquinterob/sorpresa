@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="step1" class="contenedor">
+      <div class="text">¿Listo para una prueba?</div>
+      <div class="actions">
+        <a onclick="showStep2()" class="waves-effect waves-light btn">SI</a>
+        <a onclick="chooseYes()" class="waves-effect waves-teal btn-flat">No</a>
+      </div>
+    </div>
+
+    <div id="step2" class="contenedor">
+      <div class="text">Empecemos con una pregunta facil</div>
+      <div class="question">
+        Cuanto es 3 + 1 =
+        <div class="input-field inline">
+          <input
+            style="width: 40px; font-size: 20px; color: #2a665f"
+            id="answer"
+            type="number"
+          />
+        </div>
+      </div>
+      <div class="actions">
+        <a onclick="showCongrats()" class="waves-effect waves-light btn"
+          >Verificar respuesta</a
+        >
+      </div>
+    </div>
+
+    <div id="congrats" class="contenedor">
+      <div class="text">Correcto!!!</div>
+      <br />
+      <br />
+      <div>💓💓💓</div>
+      <div class="question">
+        Queremos anunciarles que se le suma a la familia Quintero Salazar un
+        nuevo bebé que viene en camino.
+      </div>
+      <div>💓💓💓</div>
+      <div id="abuelos" class="congrats">Felicidades Abuelos</div>
+      <div id="tios" class="congrats">Felicidades Tíos y primos</div>
+      <div id="abuela" class="congrats">Felicidades Abuela</div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
