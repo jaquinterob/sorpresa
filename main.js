@@ -17,9 +17,8 @@ function showStep2() {
 function showCongrats() {
   if ($("#answer").val() == 4) {
     hideAll();
-    hideAllCongrats();
     $("#congrats").fadeIn("slow");
-    $("#" + to).fadeIn("7000");
+    $("#custom-congrats").text(`Felicitaciones ${to}`)
   } else {
     M.toast({ html: "Respuesta incorrecta, intenta de nuevo 🙂" });
     $("#answer").val("");
@@ -33,12 +32,6 @@ function chooseYes() {
 
 function hideAll() {
   $(".contenedor").each((i, e) => {
-    $(e).hide();
-  });
-}
-
-function hideAllCongrats() {
-  $(".congrats").each((i, e) => {
     $(e).hide();
   });
 }
